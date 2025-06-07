@@ -226,6 +226,44 @@
   #define U2IF_UART0_RX 1
 
 //---------------------------------------------------------
+// Radxa-X4
+//---------------------------------------------------------
+#elif BOARD == RADXA_X4
+  // I2C0
+  #define I2C0_ENABLED 1
+  #define U2IF_I2C0_SDA 28
+  #define U2IF_I2C0_SCL 29
+  // I2C1
+  #define I2C1_ENABLED 1
+  #define U2IF_I2C1_SDA 18
+  #define U2IF_I2C1_SCL 19
+  // SPI0
+  #define SPI0_ENABLED 1
+  #define U2IF_SPI0_CK 6
+  #define U2IF_SPI0_MOSI 3
+  #define U2IF_SPI0_MISO 4
+  // SPI1
+  #define SPI1_ENABLED 1
+  #define U2IF_SPI1_CK 10
+  #define U2IF_SPI1_MOSI 11
+  #define U2IF_SPI1_MISO 8
+  // UART0
+  #define UART0_ENABLED 1
+  #define U2IF_UART0_TX 0
+  #define U2IF_UART0_RX 1
+  // UART1
+  #define UART1_ENABLED 1
+  #define U2IF_UART1_TX 20
+  #define U2IF_UART1_RX 21
+  // I2S
+  #define I2S_ENABLED  I2S_ALLOW
+  #define U2IF_I2S_CLK 23
+  #define U2IF_I2S_WS  24
+  #define U2IF_I2S_SD  25
+  // HUB75
+  #define HUB75_ENABLED  HUB75_ALLOW
+
+  //---------------------------------------------------------
 // Pico (default)
 //---------------------------------------------------------
 #elif BOARD == PICO

@@ -85,6 +85,12 @@
   #define USB_VID 0xCAFE
   #define USB_PID           (0x4000 | _PID_MAP(CDC, 0) | _PID_MAP(MSC, 1) | _PID_MAP(HID, 2) | \
                             _PID_MAP(MIDI, 3) | _PID_MAP(VENDOR, 4) )
+#elif BOARD == RADXA_X4
+  #define USB_MFG "Pico"
+  #define USB_PRD "U2IF"
+  #define USB_VID 0xCAFF
+  #define USB_PID           (0x4000 | _PID_MAP(CDC, 0) | _PID_MAP(MSC, 1) | _PID_MAP(HID, 2) | \
+                            _PID_MAP(MIDI, 3) | _PID_MAP(VENDOR, 4) )
 #else
   #warning "Please define board type"
 #endif
